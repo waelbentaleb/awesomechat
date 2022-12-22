@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+
+  golang-awesomechat:
+    container_name: golang-awesomechat
+    restart: always
+    build: ./golang-awesomechat
+    ports: 
+      - 50051:50051
+
+  envoy-proxy:
+    container_name: envoy-proxy
+    restart: always
+    build: ./envoy-proxy
+    depends_on:
+      - golang-awesomechat
+    ports: 
+      - 8080:8080
+    
+  react-awesomechat:
+    container_name: react-awesomechat
+    restart: always
+    build: ./react-awesomechat
+    depends_on:
+      - envoy-proxy
+    ports: 
+      - 3000:3000

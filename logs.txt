@@ -1,0 +1,29 @@
+2022/12/22 19:13:17 New user created with this username: Wael
+2022/12/22 19:13:17 Wael connect to awesome chat stream
+2022/12/22 19:13:22 New user created with this username: Salim
+2022/12/22 19:13:22 Salim connect to awesome chat stream
+2022/12/22 19:13:31 Wael send direct message to Salim
+2022/12/22 19:13:39 Salim send direct message to Wael
+2022/12/22 19:13:48 New user created with this username: Wassim
+2022/12/22 19:13:48 Wassim connect to awesome chat stream
+2022/12/22 19:14:06 Salim send direct message to Wassim
+2022/12/22 19:14:25 Bingo group created by Wassim
+2022/12/22 19:14:44 Salim joined Bingo group
+2022/12/22 19:14:49 Wael joined Bingo group
+2022/12/22 19:15:00 Wael send a group message to Wassim
+2022/12/22 19:15:00 Wael send a group message to Salim
+2022/12/22 19:15:10 Salim send a group message to Wassim
+2022/12/22 19:15:10 Salim send a group message to Wael
+2022/12/22 19:15:33 Wassim send a group message to Salim
+2022/12/22 19:15:33 Wassim send a group message to Wael
+2022/12/22 19:15:45 Wael send a group message to Wassim
+2022/12/22 19:15:45 Wael send a group message to Salim
+2022/12/22 19:15:56 Wassim left Bingo group
+2022/12/22 19:16:10 Salim send a group message to Wael
+2022/12/22 19:16:19 Salim left Bingo group
+2022/12/22 19:16:35 Group Bingo will be deleted
+2022/12/22 19:16:35 Wael left Bingo group
+2022/12/22 19:16:54 Wael send direct message to Wassim
+2022/12/22 19:17:15 Wassim send direct message to Wael
+2022/12/22 19:17:54 Wael send direct message to Salim
+2022/12/22 19:18:16 Salim send direct message to Wael

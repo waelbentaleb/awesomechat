@@ -1,0 +1,53 @@
+
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "github.com/waelbentaleb/awesomechat";
+
+
+service ChatCore {
+  rpc CreateUser(User) returns (CreateUserResponse) {}
+  rpc Connect(User) returns (stream ReceivedMessage) {}
+  rpc SendMessage(SentMessage) returns (Empty) {}
+  rpc CreateGroupChat(Group) returns (Empty) {}
+  rpc JoinGroupChat(Group) returns (Empty) {}
+  rpc LeftGroupChat(Group) returns (Empty) {}
+  rpc ListChannels(Empty) returns (ListChannelsResponse) {}
+}
+
+message User {
+  string username = 1;
+}
+
+message CreateUserResponse {
+  string token  = 1;
+}
+
+message ReceivedMessage {
+  string sender = 1;
+  string content = 2;
+  string type = 3;
+  string groupname = 4;
+  google.protobuf.Timestamp date = 5;
+}
+
+message SentMessage {
+  string receiver = 1;
+  string content = 2;
+}
+
+message Group {
+  string groupname = 1;
+}
+
+message ListChannelsResponse {
+  repeated ListChannelsItem items = 1;
+}
+
+message ListChannelsItem {
+  string type = 1;
+  string identifier = 2;
+}
+
+message Empty {}
